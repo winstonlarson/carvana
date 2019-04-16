@@ -22,7 +22,7 @@ ids_train_split, ids_test_split = train_test_split(ids_train, test_size=0.2, ran
 i = 0
 for train_id in ids_train_split:
     image_filename = train_id + '.jpg'
-    mask_filename = train_id + '.png'
+    mask_filename = train_id + '_mask.png'
     image_src = os.path.join(image_dir, image_filename)
     image_dst = os.path.join(train_image_dir, image_filename)
     mask_src = os.path.join(mask_dir, mask_filename)
@@ -36,7 +36,7 @@ for train_id in ids_train_split:
 i = 0
 for test_id in ids_test_split:
     image_filename = test_id + '.jpg'
-    mask_filename = test_id + '.png'
+    mask_filename = test_id + '_mask.png'
     image_src = os.path.join(image_dir, image_filename)
     image_dst = os.path.join(test_image_dir, image_filename)
     mask_src = os.path.join(mask_dir, mask_filename)
