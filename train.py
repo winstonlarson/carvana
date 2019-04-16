@@ -42,7 +42,7 @@ seed = 42
 
 # Create generator for training images
 train_image_generator = image_datagen.flow_from_directory(
-    image_dir,
+    train_image_dir,
     target_size=(img_width, img_height),
     batch_size=batch_size,
     class_mode=None,
@@ -51,7 +51,7 @@ train_image_generator = image_datagen.flow_from_directory(
 
 # Create generator for training masks
 train_mask_generator = mask_datagen.flow_from_directory(
-    mask_dir,
+    train_mask_dir,
     target_size=(img_width, img_height),
     batch_size=batch_size,
     class_mode=None,
@@ -60,7 +60,7 @@ train_mask_generator = mask_datagen.flow_from_directory(
 
 # Create generator for validation images
 val_image_generator = image_datagen.flow_from_directory(
-    image_dir,
+    train_image_dir,
     target_size=(img_width, img_height),
     batch_size=batch_size,
     class_mode=None,
@@ -69,7 +69,7 @@ val_image_generator = image_datagen.flow_from_directory(
 
 # Create generator for validation masks
 val_mask_generator = mask_datagen.flow_from_directory(
-    mask_dir,
+    train_mask_dir,
     target_size=(img_width, img_height),
     batch_size=batch_size,
     class_mode=None,
