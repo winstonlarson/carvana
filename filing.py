@@ -6,7 +6,7 @@ dataset_dir = '/home/ubuntu/carvana/input/data/'
 image_dir = dataset_dir + 'images/train'
 mask_dir = dataset_dir + 'masks/train_masks'
 
-new_base_dir = 'home/ubuntu/carvana/input/'
+new_base_dir = '/home/ubuntu/carvana/input/'
 train_dir = new_base_dir + 'train/'
 test_dir = new_base_dir + 'test/'
 
