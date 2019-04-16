@@ -1,2 +1,5 @@
 /env/
 /input/
+/logs/
+/weights/
+.ipynb_checkpoints/
