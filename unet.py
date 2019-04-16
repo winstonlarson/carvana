@@ -21,7 +21,7 @@ def dice_loss(true, pred):
 
 def unet_base(input_shape=(128,128,3),
               num_classes=3, 
-              first_filters=64):
+              first_filters=16):
     
     inputs = Input(shape=input_shape)
     

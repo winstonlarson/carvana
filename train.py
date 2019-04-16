@@ -93,12 +93,12 @@ callbacks = [EarlyStopping(monitor='val_loss',
                                factor=0.1,
                                patience=4,
                                verbose=1,
-                               epsilon=1e-4),
+                               min_delta=1e-4),
              ModelCheckpoint(monitor='val_loss',
                              filepath='weights/best_weights.h5',
                              save_best_only=True,
                              save_weights_only=True),
-             TensorBoard(log_dir='logs')]
+             TensorBoard(log_dir='logs/run2')]
 
 model = unet_base()
 
