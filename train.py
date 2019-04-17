@@ -98,7 +98,7 @@ callbacks = [EarlyStopping(monitor='val_loss',
                              filepath='weights/best_weights.h5',
                              save_best_only=True,
                              save_weights_only=True),
-             TensorBoard(log_dir='logs/run4')]
+             TensorBoard(log_dir='logs/run4a')]
 
 model = unet_wreg()
 
