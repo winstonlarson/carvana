@@ -1,3 +1,5 @@
 run1 - base run
 run2 - changes first_filters to 16 from 64
 run3 - added dropout at every down and up layer (25%)
+run4 - added weight regularization to every convolutional layer
+run5 - expanded first_filters to 32 from 16

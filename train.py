@@ -11,7 +11,7 @@ from keras.callbacks import EarlyStopping, ReduceLROnPlateau, ModelCheckpoint, T
 import os
 import matplotlib.pyplot as plt
 
-from unet import unet_base, unet_dropout
+from unet import unet_base, unet_dropout, unet_wreg
 
 # define directories
 dataset_dir = '/home/ubuntu/carvana/input/'
@@ -98,9 +98,9 @@ callbacks = [EarlyStopping(monitor='val_loss',
                              filepath='weights/best_weights.h5',
                              save_best_only=True,
                              save_weights_only=True),
-             TensorBoard(log_dir='logs/run3')]
+             TensorBoard(log_dir='logs/run4')]
 
-model = unet_dropout()
+model = unet_wreg()
 
 model.fit_generator(generator=train_generator,
                     steps_per_epoch=np.ceil(num_samples_train/batch_size),
