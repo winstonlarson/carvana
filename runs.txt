@@ -4,5 +4,6 @@ run3 - added dropout at every down and up layer (25%)
 run4 - added weight regularization to every convolutional layer
 run4a - changed weight regularization to 0.001 from 0.01 and removed activation regularization
 run5 - expanded first_filters to 32 from 16
+run5a - expanded first_filters to 32 from 16 without wreg
 run6 - changed Conv2DTranspose activation to linear (not ReLU)
 run7 - changed Conv2DTranspose to UpSample2D

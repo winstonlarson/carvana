@@ -98,9 +98,9 @@ callbacks = [EarlyStopping(monitor='val_loss',
                              filepath='weights/best_weights.h5',
                              save_best_only=True,
                              save_weights_only=True),
-             TensorBoard(log_dir='logs/run5')]
+             TensorBoard(log_dir='logs/run5a')]
 
-model = unet_wreg()
+model = unet_dropout()
 
 model.fit_generator(generator=train_generator,
                     steps_per_epoch=np.ceil(num_samples_train/batch_size),
