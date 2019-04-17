@@ -86,12 +86,12 @@ train_generator = zip(train_image_generator, train_mask_generator)
 validation_generator = zip(val_image_generator, val_mask_generator)
 
 callbacks = [EarlyStopping(monitor='val_loss',
-                           patience=8,
+                           patience=3,
                            verbose=1,
                            min_delta=1e-4),
              ReduceLROnPlateau(monitor='val_loss',
                                factor=0.1,
-                               patience=4,
+                               patience=3,
                                verbose=1,
                                min_delta=1e-4),
              ModelCheckpoint(monitor='val_loss',
