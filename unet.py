@@ -154,7 +154,7 @@ def unet_dropout(input_shape=(128,128,3),
 
 def unet_wreg(input_shape=(128,128,3),
               num_classes=3, 
-              first_filters=16):
+              first_filters=32):
     
     inputs = Input(shape=input_shape)
     
